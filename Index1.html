@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunjan Rathore</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+           <div class="title">
+            <p><span1>Indore's</span1> Tourist Places</p>
+           </div>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#journey">Journey</a></li> -->
+                <li><a href="#places">Places</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Indore.</p>
+            <h1 id="typed-heading">India's <span>cleanest</span><br>city</h1>
+        </div>
+    </div>
+   </div>
+   <!--------------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Myimages/img2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About </h1>
+                    <p>Indore, located in the Indian state of Madhya Pradesh, is a vibrant city known for its rich cultural heritage and rapid urban development. It is a major commercial and educational hub in central India, boasting a blend of historic landmarks, modern infrastructure, and a diverse culinary scene. Indore's growth has earned it the nickname "Mini Mumbai" for its economic significance and dynamic lifestyle. Notably, it has been recognized as India's cleanest city, reflecting the city's commitment to cleanliness and environmental sustainability.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('present')">Present</p>
+                           <!-- <p class="tab-links">Experience</p>  -->
+                            <p class="tab-links" onclick="opentab('past')">Past</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="present">
+                            <ul>
+                                <li><span>  </span><br>Indore is known as the "Food Capital of India" with a wide variety of delicious street food.</li>
+                                <li><span>  </span><br>It has become a major educational hub, with many prestigious colleges and universities.
+                                </li>
+                                <li><span>  </span><br>The city has seen rapid development in infrastructure, including new malls, hotels, and entertainment venues.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="past">
+                            <ul>
+                                <li><span>  </span><br>Indore was the capital of the Holkar dynasty, known for its rich history and architectural marvels.</li>
+                                <li><span>  </span><br>It played a significant role in the Indian independence movement, with many freedom fighters hailing from the city.</li>
+                                <li><span>  </span><br>Indore was once a prominent trading center, attracting merchants from across the country.</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Places------------- -->
+    <div id="places">
+        <div class="container">
+            <h1 class="sub-title">Famous Places</h1>
+            <div class="places-list">
+                <div class="places">
+                    <img src="Myimages/1img.jpg">
+                    <div class="Layer">
+                        <h2>Khajrana Ganesh Mandir</h2>
+                        <p>It holds a prominent place in the religious and cultural landscape of the city, attracting devotees from far and wide. The temple is known for its impressive idol of Lord Ganesha and the annual Ganesh Chaturthi celebrations.</p>
+                        <!-- <a href="#"><i class="fa-solid fa-square-up-right"></i></a> -->
+                    </div>
+                </div>
+                <div class="places">
+                    <img src="Myimages/2img.jpg">
+                    <div class="Layer">
+                        <h2>Rajwada</h2>
+                        <p>Rajwada is a historic architectural marvel, representing the city's rich heritage. This seven-story palace, a blend of Maratha and Mughal styles, is a significant cultural attraction and a symbol of Indore's legacy.</p>
+                        <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="places">
+                    <img src="Myimages/3img.jpg">
+                    <div class="Layer">
+                        <h2>Zoo</h2>
+                        <p>"Kamla Nehru Prani Sangrahalaya," is a well-maintained wildlife conservation facility with diverse animals and birds, serving both as a place for education and wildlife preservation in the city.</p>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-- -------------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>Gunjan Rathore<br>CS-III-B</p><br>
+                <p>Roll No.<br>0832CS221071</p>
+                <div class="social-icons">
+                    <a href="https://www.github.com/GunjanRathore0011">
+                        <img src="Myimages/git.jpg" width="10%"></a>
+                  
+                      <a href="https://in.linkedin.com/company/gunjan-rathore-a00261252">
+                        <img src="Myimages/linkedin.jpg" width="10%"></a>
+                  
+                      <a href="https://www.instagram.com/gunjanrathore0011">
+                        <img src="Myimages/insta.jpg" width="10%"></a>
+                  
+                      <a href="https://mail.google.com/a/rathoregunjan46.in">
+                        <img src="Myimages/gmail.jpg" width="10%"></a>
+                
+                   
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required >
+                    <input type="email" name="Email" placeholder="Your Email" >
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>    
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+  
+        </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyY0nUHk4jDj4-vGHbg2KxqG5-xTdytWHUfkHUq6tveBy-sOLvF4ovCbIrfRJkJ79M6Qg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById()
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</body>
+</html>
